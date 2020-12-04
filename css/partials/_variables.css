@@ -7,12 +7,14 @@ html, body{
 
 /*css variables*/
 :root{
-	--primary-color: #4458dc;
-	--primary-color2: #854fee;
-	--title-color: #141313;
+	--primary-color: #f1f1f1;
+	--primary-color2: #212121;
+	--secondary-color:   #e7eaef;
+	--secondary-color2: #bbb6b6;
+	--title-color:	#8a8888;
 	--text-color: #777777;
 	--border-color: #201f1f17;
-	--gradient-color: linear-gradient(90deg, #40E0D0, #854fee 100%);
+	--button-color: #424246;
 	--shadow-color: 0px, 10px, 30px rgba(118, 85, 225, 0.3);
 	--box-shadow: 0px 10px 30px rgba(57,56, 61, 0, 205);
 }
@@ -22,3 +24,4 @@ html, body{
 
 --ptsans: "PT-Sans", cursive;
 --roboto: 'Roboto', cursive;
+--rubik: 'Rubik', cursive;

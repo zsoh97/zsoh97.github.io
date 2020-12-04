@@ -40,7 +40,7 @@
 
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
                       <!-- specify the different colums according to devices -->
                       <div class="col-lg-6 col-md-12 site-title">
                           <h3 class="title-text">Hello there!</h3>
-                          <h1>I'm <span class="name">Zeke Soh</span></h1>
+                          <h1>I'm <span class="name">Zeke</span></h1>
                           <h2 id="main-title">I am&nbsp;<span class="changing-title">a Programmer</span></h2>
                       </div>
                       <div class="col-lg-6 col-md-12 banner-img">
@@ -102,9 +102,9 @@
 
         <!-- ============================ Start About Area ============================ -->
         <section class="about-area" id="about">
-            <div class="container-fluid" data-aos="fade-right">
+            <div class="container" data-aos="fade-right">
                 <div class="about-title pb-5">
-                    <h1 class="text-uppercase title-h1">About Me</h1>
+                    <h1 class="text-uppercase title-h1 title-label">About Me</h1>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -114,9 +114,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
                         <h2 class="text-uppercase pt-5">
-                            <span>Let Me</span>
-                            <span>introduce</span>
-                            <span>myself</span>
+                            <span></span>
+                            <span>Introducing</span>
+                            <span>Zeke</span>
                         </h2>
                         <div class="paragraph py-4 w-50%">
                             <p class="para py-1">
@@ -128,65 +128,65 @@
                 </div>
             </div>
             <!-- ============================ Start Skills Area ============================ -->
-            
             <section class="skills-area">
-                <div class="container" data-aos="fade-right">
+                <div class="container-fluid" data-aos="fade-right">
                     <div class="col-lg-12 skills">
                         <div class="skill-title text-uppercase">
                             <h1>Skills</h1>
                         </div>
-                        <div class="about-tabs">
-                            <ul class="tabs py-4">
-                                <li class="tab" id="language-head" onclick="viewTab('languages','language-head')">Languages</li>
-                                <li class="tab" id="frame-head" onclick="viewTab('frameworks','frame-head')">Frameworks</li>
-                                <li class="tab" id="platform-head" onclick="viewTab('platform','platform-head')">Platforms</li>
-                                <li class="tab" id="edu-head" onclick="viewTab('education','edu-head')">Education</li>
-                            </ul>
-            
-                            <div class="tab-contents languages py-1" id="languages">
-                                <div class="tab-content">
-                                    <h3>Java</h3>
+                        <div class="row">
+                            <div class="flip-card col-lg-3 col-md-6 col-sm-12">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img src="./img/skills/code-languages.jpg" alt="Languages">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <h3>Java<br>Python<br>C++</h3>
+                                  </div>
                                 </div>
-                                <div class="tab-content">
-                                    <h3>Python</h3>
+                                <div class="label">
+                                    <h3>Languages</h3>
                                 </div>
-                            </div>
-			    <div class="tab-contents frameworks">
-				</br>
-                                <div class="tab-content">
-                                    <h3>REST API</h3>
+                              </div>
+                              <div class="flip-card col-lg-3 col-md-6 col-sm-12">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img src="./img/skills/frameworks.jpg" alt="Frameworks">
+                                  </div>
+                                  <div class="flip-card-back">
+                                        <h4>MVC<br>Tensorflow/keras<br>CSS/HTML<br>VueJS/VueX<br>JavaFX<br>Git</h4>
+                                    </div>
                                 </div>
-                                <div class="tab-content">
-                                    <h3>MVC</h3>
+                                <div class="label">
+                                    <h3>Frameworks</h3>
                                 </div>
-                                <div class="tab-content">
-                                    <h3>Tensorflow/keras</h3>
+                              </div>
+                              <div class="flip-card col-lg-3 col-md-6 col-sm-12">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img src="./img/skills/platforms.jpg" alt="Platforms">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <h4>Android Studio<br>Firebase/Firestore</h4>
+                                  </div>
                                 </div>
-                                <div class="tab-content">
-                                    <h3>CSS/HTML</h3>
+                                <div class="label">
+                                    <h3>Platforms</h3>
                                 </div>
-                                <div class="tab-content">
-                                    <h3>JavaFX</h3>
+                              </div>
+                                <div class="flip-card col-lg-3 col-md-6 col-sm-12">
+                                    <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/skills/education.png" alt="Education">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h5>Computer Science @ <br> National University of Singapore : 2018-Present</h5>
+                                    </div>
+                                    </div>
+                                    <div class="label">
+                                        <h3>Education</h3>
+                                    </div>
                                 </div>
-                                <div class="tab-content">
-                                    <h3>Git</h3>
-                                </div>    
-			    </div>
-                            <div class="tab-contents platform">
-                                <div class="tab-content">
-                                    <h3>Android Studio</h3>
-                                </div>
-                                <div class="tab-content">
-                                    <h3>Firebase/Firestore</h3>
-                                </div>
-                            </div>
-                            
-                            <div class="tab-contents education">
-                                <div class="tab-content">
-                                    <h3>Computer Science @ </h3>
-                                    <p>National University of Singpore : 2018-Present</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
         <section class="project-area" id="projects" data-aos="fade-right">
             <div class="container">
                 <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1">Projects</h1>
+                    <h1 class="text-uppercase title-h1 title-label">Projects</h1>
                 </div>
                 <div class="row grid">
                     <div class="col-lg-6 col-md-6 element-item latest java">
@@ -334,11 +334,11 @@
 
         <!-- ============================ Start Contact Me ============================-->
         <section class="contact-area" id="contact" data-aos="fade-right">
-            <div class="container">
-                <div class="contact-container">
-                    <h1 class="title-h1">Get In Touch</h1>
+            <div class="container contact-container">
+                <div class="">
+                    <h1 class="title-h1 title-label">Get In Touch</h1>
                     <div class="contact-msg">
-                        <p></br> I am seeking an internship position in the industry in which I can put into practice my knowledge and experience, ultimately benefiting the operations of the organization that I work for.</br> I will do my best to respond to all contact attempts, whether you have any opportunities to offer me or just simply want to say hi.</p>
+                        <p></br> I am currently completing an internship with AutoDesk.</br>However, do feel free to contact me and I will get back to you at my earliest convenience.</p>
                     </div>
                 </div>
                 <div class="contact-btn">
