@@ -141,11 +141,10 @@
 
 /* end loader */
 
-
 /* body */
 body{
 	color: var(--primary-color2);
-	background-color: #f5f6f9;
+	background-color: var(--bg-color);
 	font-family: 'PT-Sans';
 }
 
@@ -180,7 +179,7 @@ body{
 /* start banner area */
 
 .title-label{
-	color: var(--title-color);
+	color: var(--secondary-color2);
 }
 
 .site-main{
@@ -254,26 +253,36 @@ body{
 	font-family: Roboto;
 }
 
+/* skills area start */
+
 .skill-title{
 	margin-top: 5rem;
 	font-size: 3rem;
 	text-align: center;
 }
 
-/* skills card animation */
+.skills-area {
+	margin-bottom: 10rem;
+}
 
 .flip-card img{
 	width:100%;
 	height: 100%;
-	border-top-left-radius:6px;
-	border-top-right-radius:6px;
+	border-radius: 12px;
+}
+
+.card-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .flip-card {
 	background-color: transparent;
 	width: 300px;
-	height: 300px;
-	border: 1px solid #f1f1f1;
+	height: 370px;
 	margin-top: 50px;
   }
   
@@ -296,27 +305,28 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border-radius: 6px;
+	border-radius: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center ;
 	-webkit-backface-visibility: hidden; /* Safari */
 	backface-visibility: hidden;
+	background-color: var(--card-color);
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
 	  content: "Oopsies :)";
-	  background-color: var(--secondary-color);
+	  color: var(--secondary-color2);
+	  font-family: PT-Sans;
   }
   
   /* Style the back side */
   .flip-card-back {
+	font-family: Roboto;
 	text-align: center;
 	flex-wrap: wrap;
 	transform: rotateY(180deg);
-	font-family: Roboto;
-	background-color: var(--button-color);
 	color: var(--title-color);
   }
 
@@ -333,14 +343,8 @@ body{
   .breaker {
 	  display: none;
   }
-
-  .label {
-	  margin-top: 8px;
-	  text-align: center;
-	  font-family: PT-Sans;
-  }
   
-/* skills card end animation */
+/* skills area end */
 
 .about-tabs{
 	margin-top:30px;
@@ -411,6 +415,7 @@ body{
 /* start project area */
 .site-main .project-area{
 	padding: 5rem 0;
+	background-color: var(--primary-color);
 }
 
 .site-main .project-area .container{
@@ -462,7 +467,7 @@ body{
 }
 
 .project-img{
-	width:100%;
+	width:inherit;
 	height: fit-content;
 	border-top-left-radius:6px;
 	border-top-right-radius:6px;
@@ -487,7 +492,7 @@ body{
 	left:0;
 	right:0;
 	margin-bottom: 15px;
-	background:var(--primary-color);
+	background:var(--bg-color);
 	transition:.4s ease-in;
 	overflow:hidden;
 	border-bottom-left-radius:6px;
@@ -508,7 +513,7 @@ body{
 	font-size:1.3rem;
 	font-weight:700;
 	margin-bottom:.8rem;
-	background: var(--title-color);
+	background: var(--secondary-color2);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
@@ -657,7 +662,7 @@ body{
 
 .social-media-pack a:hover{
 	background-clip: padding-box;
-	background: #f5f6f9;
+	background-color: var(--title-color);
 	color: var(--primary-color2);
 	border-width: 1px;
 }
@@ -725,7 +730,7 @@ input:-webkit-autofill{
 /* start footer area */
 .footer{
 	padding:4rem 15% 2rem 15%;
-	background-color:var(--secondary-color2);
+	background-color:var(--card-color);
 	width:100%;
 	display:flex;
 	flex-direction:column;
@@ -756,7 +761,7 @@ input:-webkit-autofill{
 .footer p{
 	font-size:1.5rem;
 	font-family: "Roboto", normal;
-	color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
 .up-btn-wrapper{

@@ -44,7 +44,7 @@
 	border-radius: 4px;
 }
 
-.contact-container:hover .contact-icon, .up-btn:hover{
+ .contact-icon, .up-btn:hover{
 	background: var(--button-color);
 	color: var(--primary-color);
 	background-clip: padding-box;
