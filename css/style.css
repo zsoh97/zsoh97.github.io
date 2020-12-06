@@ -455,11 +455,12 @@ body{
 	justify-content:center
 }
 
+
 .project-card{
 	width: 100%;
+	margin: auto;
 	min-height:350px;
 	position: sticky;
-	margin-left: auto;
 	border-top-left-radius:6px;
 	border-top-right-radius:6px;
 	overflow:hidden;
@@ -499,6 +500,21 @@ body{
 	border-bottom-right-radius:6px
 }
 
+#CookForYou {
+	max-width: 445px;
+}
+
+#Sudoku {
+	max-width: 550px;
+}
+
+#Refridgenator {
+	max-width: 550px;
+}
+
+#SpaceInvaders {
+	max-width: 550px;
+}
 .card-content p{
 	font-size:1rem;
 	line-height:1.5rem;
