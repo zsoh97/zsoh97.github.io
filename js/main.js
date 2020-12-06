@@ -25,9 +25,6 @@ $(document).ready(function(){
 
     setInterval(changeTitle, 3200);
 
-    // Setting Activate Tab in About Section
-    viewTab('languages', "language-head");
-
     //Showing & Hiding Card Content on Click
     $('.project-card').click(function () {
 
@@ -62,14 +59,6 @@ $(document).ready(function(){
 function viewNav(navName){
     $('.nav-item').removeClass('active');
     $('#' + navName).toggleClass('active');
-}
-
-function viewTab(tabName, tabHead) {
-    $('.tab').removeClass('active');
-    $('#' + tabHead).toggleClass('active');
-    $('.tab-contents').css({ display: "none" });
-    $('.' + tabName).css({ display: "block" });
-
 }
 
 
