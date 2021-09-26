@@ -40,7 +40,7 @@
 
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="autohide navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,10 +76,6 @@
             <div class="loader-section section-right"></div>
         </div>
 
-    <!-- ============================ Start Loader Area ============================ -->
-
-    <!-- ============================ End Loader Area ============================ -->
-
         <!-- ============================ Start Main Area ============================ -->
         
         <!-- ============================ Start Banner Area ============================ -->
@@ -113,13 +109,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
-                        <h2 class="text-uppercase pt-5">
-                            <span></span>
-                            <span>A little about me</span>
-                        </h2>
-                        <div class="paragraph py-4 w-50%">
+                        <div class="paragraph py-4">
                             <p class="para py-1">
-                                I am a hardworking and ambitious individual with a great passion for Software Engineering and Artificial Intelligence industry.</br>Currently a penultimate student at the School of Computing in NUS. </br>I have excellent communication skills, enabling me to effectively communicate with a wide range of people.
+                                Hello There! My name is Zeke and I enjoy learning about  am a hardworking and ambitious individual with a great passion for Software Engineering and Artificial Intelligence industry.</br>Currently a penultimate student at the School of Computing in NUS. </br>I have excellent communication skills, enabling me to effectively communicate with a wide range of people.
                             </p>
                         </div>
                         <button type="button" class="btn button primary-button text-uppercase" onclick="window.open('./assets/resources/resume.docx', '_self')">Download cv</button>
@@ -128,6 +120,43 @@
             </div>
         </section>
         <!-- ============================ End About Area ============================ -->
+        <!-- ============================ Start Employment Area ============================ -->
+        <section class="emp-area" id="employment">
+            <div class="container" data-aos="fade-right">
+                <div class="emp-title pb-5">
+                    <h1 class="text-uppercase title-h1 title-label">Employment</h1>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-2 emp-title">
+                        <ul>
+                            <li>
+                                <button type="button" class="emp-item emp-btn emp-active selectedtext-uppercase" id="autodesk-job" onclick="viewEmp('autodesk')">
+                                    AutoDesk
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-lg-6">
+                        <div class="emp-desc emp-desc-active" id="autodesk-desc">
+                            <h5 class="emp-role">SRE Intern <span class="company-name">@ AutoDesk</span></h5>
+                            <h6 class="emp-duration">Jan 2021 - July 2021</h6>
+                            <ul class="emp-responsibilities">
+                                <li>
+                                    <p>Created Terraform modules and applications used in the migration of services in AWS. Created modules and applications that were used in all environments.</p> 
+                                </li>
+                                <li>
+                                    <p>Performed code reviews for Terraform related applications within the team.</p> 
+                                </li>
+                                <li>
+                                    <p>Implemented end-to-end pipeline in Jenkins for the renewal of SSL/TLS certificates from Venafi to AWS. Pipeline is used in all environments.</p> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================ End Employment Area ============================ -->
             <!-- ============================ Start Skills Area ============================ -->
             <section class="skills-area">
                 <div class="container-fluid" data-aos="fade-right">
@@ -144,7 +173,7 @@
                                         </div>
                                       </div>
                                   <div class="flip-card-back">
-                                    <h3>Java<br>Python<br>C++</h3>
+                                    <h3>Java<br>Python<br>C++<br>HCL</h3>
                                   </div>
                                 </div>
                               </div>
@@ -152,11 +181,11 @@
                                 <div class="flip-card-inner">
                                   <div class="flip-card-front">
                                     <div class="card-title">
-                                        <h3>Familiar Frameworks</h3>
+                                        <h3>Frameworks</h3>
                                     </div>
                                   </div>
                                   <div class="flip-card-back">
-                                        <h4>MVC<br>Tensorflow/keras<br>CSS/HTML<br>VueJS/VueX<br>JavaFX<br>Git</h4>
+                                        <h4>CSS/HTML<br>VueJS/VueX<br>Git</h4>
                                     </div>
                                 </div>
                               </div>
@@ -168,7 +197,7 @@
                                     </div>
                                   </div>
                                   <div class="flip-card-back">
-                                    <h4>Android Studio<br>Firebase/Firestore</h4>
+                                    <h4>Android Studio<br>Firebase/Firestore<br>AWS<br>Jenkins</h4>
                                   </div>
                                 </div>
                               </div>
@@ -176,11 +205,11 @@
                                     <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <div class="card-title">
-                                            <h3>Education</h3>
+                                            <h3>Experience</h3>
                                         </div>
                                     </div>
                                     <div class="flip-card-back">
-                                        <h5>Computer Science @ <br> National University of Singapore : 2018-Present</h5>
+                                        <h5>SRE Intern @ AutoDesk</h5>
                                     </div>
                                     </div>
                                 </div>
@@ -197,19 +226,19 @@
                     <h1 class="text-uppercase title-h1 title-label">Projects</h1>
                 </div>
                 <div class="row grid">
-                    <div class="col-lg-6 col-md-12 col-sm-12 element-item latest java">
+                    <div class="col-lg-6 col-md-12 col-sm-12 element-item java">
                         <div class="our-project">
                             <div class="project-content">
                                 <div class="project-card">
                                     <a class="project-img test-popup-link" href="./img/portfolio/ChairVisE.png">
-                                        <img src="./img/portfolio/ChairVisE2.png" alt="portfolio-1" class="img-fluid">
+                                        <img src="./img/portfolio/ChairVisE2.png" alt="portfolio-1" class="img-fluid" style="width:100%">
                                     </a>
                                     <div class="card-content py-4">
-                                        <h4>ChairVisE/Chairhub (private repository)</h4>
+                                        <h4>ChairVisE/Chairhub</h4>
                                         <h5><i class="website-i"></i><strong>Web Application</strong></h5>
-                                        <p>Brownfield project that generates visualizations. We integrated annotations for visualizations, social hub (ChairHub) and notifications. 
+                                        <p> Visualization tool to analyze paper submission information for conferences/ social blog space(ChairHub). 
                                         </p>
-                                        <p><strong>Technologies Used :</strong> Vue.js/Vuex, &nbsp; Google App Engine as PaaS, &nbsp; Spring REST, &nbsp; Google Cloud SQL (MySQL 5.6)</p>
+                                        <p><strong>Technologies Used :</strong> Java, VueJS/Vuex, &nbsp; Google App Engine, &nbsp; Spring REST, &nbsp; Google Cloud SQL</p>
                                         </div>
                                     </div>
                                 </div>
@@ -223,12 +252,11 @@
                                         <img src="./img/portfolio/SPA.jpg" alt="portfolio-2" class="img-fluid">
                                     </a>
                                     <div class="card-content py-4">
-                                        <h4>Static Program Analyzer (private repository)</h4>
+                                        <h4>Static Program Analyzer</h4>
                                         <h5><i class="website-i"></i><strong>C++ Executable</strong></h5>
-                                        <p>SPA performs lexical and semantic analysis on the given source program and returns meaningful query results to the user.
+                                        <p>SPA performs lexical and semantic analysis on the given source program and returns meaningful query results.
                                         </p>
-                                        <p><strong>Responsibility :</strong> Testing IC</p>
-                                        <p><strong>Technologies Used :</strong> C++, shell script(for testing)</p>
+                                        <p><strong>Technologies Used :</strong> C++</p>
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 element-item java">
+                    <div class="col-lg-6 col-md-12 col-sm-12 element-item java">
                         <div class="our-project">
                             <div class="project-content">
                                 <div class="project-card">
@@ -286,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 sm-md-12 element-item latest python hidden collapse-project">
+                    <div class="col-lg-6 col-md-12 sm-md-12 element-item latest python hidden collapse-project">
                         <div class="our-project">
                             <div class=" project-content">
                                 <div class="project-card">
@@ -311,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-md-12 element-item python hidden collapse-project" id="refridgenator">
+                    <div class="col-lg-6 col-md-12 col-md-12 element-item python hidden collapse-project" id="refridgenator">
                         <div class="our-project">
                             <div class="project-content">
                                 <div class="project-card">
@@ -329,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 element-item latest python hidden collapse-project" id="spaceInvaders">
+                    <div class="col-lg-6 col-md-12 col-sm-12 element-item latest python hidden collapse-project" id="spaceInvaders">
                         <div class="our-project">
                             <div class=" project-content">
                                 <div class="project-card">
@@ -355,7 +383,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn button primary-button text-uppercase view-more">
+                    <button type="button" class="btn button secondary-button mr-4 text-uppercase view-more">
                         <span id="view-more-content">View More</span>
                     </button>
                 </div>
@@ -370,7 +398,7 @@
                 <div class="">
                     <h1 class="title-h1 title-label">Get In Touch</h1>
                     <div class="contact-msg">
-                        <p></br> I am currently completing an internship with AutoDesk.</br>However, do feel free to contact me and I will get back to you at my earliest convenience.</p>
+                        <p></br> I am currently completing my studies at NUS.</br>However, do feel free to contact me and I will get back to you at my earliest convenience.</p>
                     </div>
                 </div>
                 <div class="contact-btn">
@@ -409,11 +437,10 @@
                 <a href="#" class="up-btn-wrapper" alt="Go to top">
                     <i class="fa fa-angle-up up-btn"></i>
                 </a>
-        
-                <hr / width="100%">
-        
+                
                 <p>Made by Zeke</p>
-                <p class="copyright">&copy; 2020 Zeke Soh</p>
+                <hr / width="100%">
+                <p>Last updated Monday 27 September 2021</p>
         
         
             </footer>

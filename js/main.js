@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     var i = 1;
     let changeTitle = () => {
-        let titles = ["a Programmer\n", "a Penultimate Computer Science Student at NUS"];
+        let titles = ["a Programmer\n", "a Final Year CS Student at NUS", "a builder"];
         if (i == titles.length) {
         i = 0;
         }
@@ -61,14 +61,44 @@ function viewNav(navName){
     $('#' + navName).toggleClass('active');
 }
 
+function viewEmp(empName){
+    let currentlyActive = $('#' + empName + '-desc').hasClass('emp-desc-active');
+    if (currentlyActive) {
+        return 
+    }
+    
+    $('.emp-item').removeClass('emp-active');
+    $('.emp-desc').removeClass('emp-desc-active')
+    setTimeout(function(){
+        $('#' + empName + "-job").toggleClass('emp-active');
+        $('#' + empName + "-desc").toggleClass('emp-desc-active')
+    }, 250)
+}
 
-function viewProjectTab(tabName, tabHead) {  
+document.addEventListener("DOMContentLoaded", function(){
 
-    $('.project-tab').removeClass('active-project');
-    $('#' + tabHead).toggleClass('active-project');
+    let el_autohide = document.querySelector('.autohide');
+    
+    // add padding-top to bady (if necessary)
+    let navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop = navbar_height + 'px';
   
-    $('.project-content').css({ display: "none" });
-    $('.' + tabName).css({ display: "grid" });
+    if(el_autohide){
+      var last_scroll_top = 0;
+      window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+           if(scroll_top < last_scroll_top) {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+            }
+            else {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+      }); 
+      // window.addEventListener
+    }
+    // if
   
-  };
-  
+  }); 
